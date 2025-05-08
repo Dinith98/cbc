@@ -1,0 +1,7 @@
+[root@lkupwmeapp01 deployment]# docker ps
+CONTAINER ID   IMAGE                                       COMMAND                  CREATED      STATUS      PORTS                                                                                            NAMES
+19f1fa274cdc   cbaitd/push-notification:CBC_V1.0.9         "java -jar pushnotif…"   8 days ago   Up 8 days   0.0.0.0:9595->9595/tcp, :::9595->9595/tcp                                                        pushnotification-server
+6015d9190900   cbaitd/email-service:CBC_V1.0.0             "java -jar email-ser…"   8 days ago   Up 8 days   0.0.0.0:9091->9091/tcp, :::9091->9091/tcp                                                        email-service
+9489d73436fa   cbaitd/file-export-service:CBC_V1.0.1       "java -jar file-expo…"   8 days ago   Up 8 days   0.0.0.0:9797->9797/tcp, :::9797->9797/tcp                                                        file-export-service
+d340f2a3c037   cbaitd/dev:CBC_A_V1.0.5                     "/entrypoint.sh ngin…"   8 days ago   Up 8 days   0.0.0.0:3000->80/tcp, [::]:3000->80/tcp                                                          wireme-frontend-public
+d45d79bd95a1   cbaitd/wireme-core-ca:CBC_V1.1.5_20250423   "docker-entrypoint.s…"   8 days ago   Up 8 days   0.0.0.0:8500->8500/tcp, :::8500->8500/tcp, 0.0.0.0:8502->8502/tcp, :::8502->8502/tcp, 8501/tcp   wireme-core-ca
