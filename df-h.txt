@@ -1,0 +1,22 @@
+[root@lkupwmeapp01 deployment]# df -h
+Filesystem                            Size  Used Avail Use% Mounted on
+devtmpfs                              4.0M     0  4.0M   0% /dev
+tmpfs                                 7.7G  4.0K  7.7G   1% /dev/shm
+tmpfs                                 3.1G  161M  3.0G   6% /run
+efivarfs                              256K   53K  199K  21% /sys/firmware/efi/efivars
+/dev/mapper/rhel_vg-root_lv            10G  2.9G  7.2G  29% /
+/dev/mapper/rhel_vg-tmp_lv            5.0G   69M  5.0G   2% /tmp
+/dev/mapper/rhel_vg-var_lv            5.0G  770M  4.3G  16% /var
+/dev/sdb2                            1014M  419M  596M  42% /boot
+/dev/mapper/rhel_vg-app_lv            100G  9.2G   91G  10% /wme_apps
+/dev/sdb1                            1012M  7.1M 1005M   1% /boot/efi
+/dev/mapper/rhel_vg-var_tmp_lv        5.0G   69M  5.0G   2% /var/tmp
+/dev/mapper/rhel_vg-home_lv           5.0G   69M  5.0G   2% /home
+/dev/mapper/rhel_vg-var_log_lv         10G  243M  9.8G   3% /var/log
+/dev/mapper/rhel_vg-var_log_audit_lv   10G  743M  9.3G   8% /var/log/audit
+overlay                               100G  9.2G   91G  10% /wme_apps/docker/overlay2/cfd9bcef82b1e53d5edcf444018fdd0de8e696496ad65998d5a102f1e3e87e02/merged
+overlay                               100G  9.2G   91G  10% /wme_apps/docker/overlay2/88904eb520b65460a5bed635e48722c665bcbf7cbc5c78e93591d1817d37bbbb/merged
+overlay                               100G  9.2G   91G  10% /wme_apps/docker/overlay2/64f4f970eef15c9a70d7c89b9f7f39a3795712d063552bc14af8b148548ef828/merged
+overlay                               100G  9.2G   91G  10% /wme_apps/docker/overlay2/032dff58c5c98bc3dcbb88a65daa9fe0fb0c6e3bab9767725916e49e936cdf84/merged
+overlay                               100G  9.2G   91G  10% /wme_apps/docker/overlay2/97249ea1737bf60b85408ecf74dad339712584a8c7340a1a1f314da5a4f8d5df/merged
+tmpfs                                 1.6G     0  1.6G   0% /run/user/0
